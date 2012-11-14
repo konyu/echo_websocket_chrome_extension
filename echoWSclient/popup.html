@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        min-width:357px;
+        overflow-x:hidden;
+      }
+
+      img {
+        margin:5px;
+        border:2px solid black;
+        vertical-align:middle;
+        width:75px;
+        height:75px;
+      }
+
+      #content{
+        font-size: 5px;
+      }
+    </style>
+
+    <!-- JavaScript and HTML must be in separate files for security. -->
+    <script src="jquery-1.8.2.min.js"></script>
+    <script src="jquery.json-2.4.min.js"></script>
+
+    <script src="jquery.websocket-0.0.1.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+<h2>WebSocket echo</h2>
+<div>
+  <input id="message" type="text"/>
+</div>
+<div id="content"></div>
+  </body>
+</html>
